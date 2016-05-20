@@ -122,16 +122,18 @@ namespace RCJ_Scoreboard {
 			label18.Text = f1.textBox4.Text;
 			label9.Text = "" + f1.numericUpDown1.Value + "";
 			label6.Text = "" + f1.numericUpDown2.Value + "";
-			label12.Text = "" + f1.numericUpDown3.Value + "";
-			label15.Text = "" + f1.numericUpDown4.Value + "";
+			label12.Text = "" + f1.numericUpDown4.Value + "";
+			label15.Text = "" + f1.numericUpDown3.Value + "";
+			label22.BeginInvoke((MethodInvoker)delegate () { label22.Text = f1.textBox_state.Text; });
+			label21.BeginInvoke((MethodInvoker)delegate () { label21.Text = f1.textBox_M.Text; });
+			label23.BeginInvoke((MethodInvoker)delegate () { label23.Text = f1.textBox_S.Text; });
 		}
 
 		//閉じられたとき
 		private void From2_Closing(object sender, FormClosingEventArgs e) {
 			f1.Scoreboard.Enabled = true;
 		}
-
-
+		
 		//マウスポインタの位置を保存する
 		private Point mousePoint;
 		//マウスのボタンが押されたとき

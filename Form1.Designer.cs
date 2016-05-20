@@ -82,13 +82,13 @@
 			this.button5 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.label23 = new System.Windows.Forms.Label();
-			this.textBox15 = new System.Windows.Forms.TextBox();
+			this.textBox_S = new System.Windows.Forms.TextBox();
 			this.label24 = new System.Windows.Forms.Label();
-			this.textBox16 = new System.Windows.Forms.TextBox();
+			this.textBox_M = new System.Windows.Forms.TextBox();
 			this.label25 = new System.Windows.Forms.Label();
-			this.textBox14 = new System.Windows.Forms.TextBox();
+			this.textBox_state = new System.Windows.Forms.TextBox();
 			this.label22 = new System.Windows.Forms.Label();
-			this.button4 = new System.Windows.Forms.Button();
+			this.button_reset = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -153,8 +153,9 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(209, 70);
 			this.button1.TabIndex = 11;
-			this.button1.Text = "得点";
+			this.button1.Text = "得点\r\n状態が前半・後半の時のみ追加";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click_1);
 			// 
 			// label5
 			// 
@@ -268,8 +269,9 @@
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(209, 70);
 			this.button2.TabIndex = 11;
-			this.button2.Text = "得点";
+			this.button2.Text = "得点\r\n状態が前半・後半の時のみ追加";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// label6
 			// 
@@ -628,6 +630,7 @@
 			this.radioButton5.TabIndex = 4;
 			this.radioButton5.Text = "試合終了";
 			this.radioButton5.UseVisualStyleBackColor = true;
+			this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
 			// 
 			// radioButton1
 			// 
@@ -676,11 +679,11 @@
 			this.groupBox5.Controls.Add(this.button5);
 			this.groupBox5.Controls.Add(this.button3);
 			this.groupBox5.Controls.Add(this.label23);
-			this.groupBox5.Controls.Add(this.textBox15);
+			this.groupBox5.Controls.Add(this.textBox_S);
 			this.groupBox5.Controls.Add(this.label24);
-			this.groupBox5.Controls.Add(this.textBox16);
+			this.groupBox5.Controls.Add(this.textBox_M);
 			this.groupBox5.Controls.Add(this.label25);
-			this.groupBox5.Controls.Add(this.textBox14);
+			this.groupBox5.Controls.Add(this.textBox_state);
 			this.groupBox5.Controls.Add(this.label22);
 			this.groupBox5.Location = new System.Drawing.Point(345, 205);
 			this.groupBox5.Name = "groupBox5";
@@ -718,14 +721,14 @@
 			this.label23.TabIndex = 26;
 			this.label23.Text = "秒";
 			// 
-			// textBox15
+			// textBox_S
 			// 
-			this.textBox15.Location = new System.Drawing.Point(109, 40);
-			this.textBox15.Name = "textBox15";
-			this.textBox15.ReadOnly = true;
-			this.textBox15.Size = new System.Drawing.Size(30, 19);
-			this.textBox15.TabIndex = 25;
-			this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.textBox_S.Location = new System.Drawing.Point(109, 40);
+			this.textBox_S.Name = "textBox_S";
+			this.textBox_S.ReadOnly = true;
+			this.textBox_S.Size = new System.Drawing.Size(30, 19);
+			this.textBox_S.TabIndex = 25;
+			this.textBox_S.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// label24
 			// 
@@ -736,14 +739,14 @@
 			this.label24.TabIndex = 24;
 			this.label24.Text = "分";
 			// 
-			// textBox16
+			// textBox_M
 			// 
-			this.textBox16.Location = new System.Drawing.Point(59, 40);
-			this.textBox16.Name = "textBox16";
-			this.textBox16.ReadOnly = true;
-			this.textBox16.Size = new System.Drawing.Size(30, 19);
-			this.textBox16.TabIndex = 23;
-			this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.textBox_M.Location = new System.Drawing.Point(59, 40);
+			this.textBox_M.Name = "textBox_M";
+			this.textBox_M.ReadOnly = true;
+			this.textBox_M.Size = new System.Drawing.Size(30, 19);
+			this.textBox_M.TabIndex = 23;
+			this.textBox_M.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// label25
 			// 
@@ -754,13 +757,13 @@
 			this.label25.TabIndex = 22;
 			this.label25.Text = "現在時";
 			// 
-			// textBox14
+			// textBox_state
 			// 
-			this.textBox14.Location = new System.Drawing.Point(59, 15);
-			this.textBox14.Name = "textBox14";
-			this.textBox14.ReadOnly = true;
-			this.textBox14.Size = new System.Drawing.Size(100, 19);
-			this.textBox14.TabIndex = 1;
+			this.textBox_state.Location = new System.Drawing.Point(59, 15);
+			this.textBox_state.Name = "textBox_state";
+			this.textBox_state.ReadOnly = true;
+			this.textBox_state.Size = new System.Drawing.Size(100, 19);
+			this.textBox_state.TabIndex = 1;
 			// 
 			// label22
 			// 
@@ -771,20 +774,21 @@
 			this.label22.TabIndex = 0;
 			this.label22.Text = "状態";
 			// 
-			// button4
+			// button_reset
 			// 
-			this.button4.Location = new System.Drawing.Point(345, 344);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(53, 23);
-			this.button4.TabIndex = 28;
-			this.button4.Text = "リセット";
-			this.button4.UseVisualStyleBackColor = true;
+			this.button_reset.Location = new System.Drawing.Point(345, 344);
+			this.button_reset.Name = "button_reset";
+			this.button_reset.Size = new System.Drawing.Size(53, 23);
+			this.button_reset.TabIndex = 28;
+			this.button_reset.Text = "リセット";
+			this.button_reset.UseVisualStyleBackColor = true;
+			this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
 			// 
 			// Form1
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.ClientSize = new System.Drawing.Size(519, 379);
-			this.Controls.Add(this.button4);
+			this.Controls.Add(this.button_reset);
 			this.Controls.Add(this.groupBox5);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
@@ -852,13 +856,10 @@
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.GroupBox groupBox5;
 		private System.Windows.Forms.Label label23;
-		private System.Windows.Forms.TextBox textBox15;
 		private System.Windows.Forms.Label label24;
-		private System.Windows.Forms.TextBox textBox16;
 		private System.Windows.Forms.Label label25;
-		private System.Windows.Forms.TextBox textBox14;
 		private System.Windows.Forms.Label label22;
-		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.Button button_reset;
 		public System.Windows.Forms.TextBox textBox1;
 		public System.Windows.Forms.TextBox textBox2;
 		public System.Windows.Forms.TextBox textBox5;
@@ -883,6 +884,9 @@
 		public System.Windows.Forms.RadioButton radioButton2;
 		public System.Windows.Forms.RadioButton radioButton1;
 		public System.Windows.Forms.RadioButton radioButton5;
+		public System.Windows.Forms.TextBox textBox_S;
+		public System.Windows.Forms.TextBox textBox_M;
+		public System.Windows.Forms.TextBox textBox_state;
 	}
 }
 
