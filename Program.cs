@@ -18,6 +18,7 @@ namespace RCJ_Scoreboard
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
+
             //Display f as a modeless dialog
             Form f = new Form();
             f.Show();

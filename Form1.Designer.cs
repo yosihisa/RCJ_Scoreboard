@@ -54,20 +54,20 @@
 			this.textBox6 = new System.Windows.Forms.TextBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.b_s = new System.Windows.Forms.NumericUpDown();
+			this.f_s = new System.Windows.Forms.NumericUpDown();
+			this.f_m = new System.Windows.Forms.NumericUpDown();
+			this.h_s = new System.Windows.Forms.NumericUpDown();
+			this.h_m = new System.Windows.Forms.NumericUpDown();
+			this.s_s = new System.Windows.Forms.NumericUpDown();
+			this.s_m = new System.Windows.Forms.NumericUpDown();
 			this.label21 = new System.Windows.Forms.Label();
-			this.textBox13 = new System.Windows.Forms.TextBox();
 			this.label19 = new System.Windows.Forms.Label();
-			this.textBox11 = new System.Windows.Forms.TextBox();
 			this.label20 = new System.Windows.Forms.Label();
-			this.textBox12 = new System.Windows.Forms.TextBox();
 			this.label17 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
 			this.label18 = new System.Windows.Forms.Label();
-			this.textBox10 = new System.Windows.Forms.TextBox();
 			this.label16 = new System.Windows.Forms.Label();
-			this.textBox9 = new System.Windows.Forms.TextBox();
 			this.label15 = new System.Windows.Forms.Label();
-			this.textBox8 = new System.Windows.Forms.TextBox();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
@@ -79,6 +79,7 @@
 			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			this.radioButton3 = new System.Windows.Forms.RadioButton();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
+			this.button5 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.label23 = new System.Windows.Forms.Label();
 			this.textBox15 = new System.Windows.Forms.TextBox();
@@ -95,6 +96,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
 			this.groupBox3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.b_s)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.f_s)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.f_m)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.h_s)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.h_m)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.s_s)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.s_m)).BeginInit();
 			this.groupBox4.SuspendLayout();
 			this.groupBox5.SuspendLayout();
 			this.SuspendLayout();
@@ -361,20 +369,20 @@
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.b_s);
+			this.groupBox3.Controls.Add(this.f_s);
+			this.groupBox3.Controls.Add(this.f_m);
+			this.groupBox3.Controls.Add(this.h_s);
+			this.groupBox3.Controls.Add(this.h_m);
+			this.groupBox3.Controls.Add(this.s_s);
+			this.groupBox3.Controls.Add(this.s_m);
 			this.groupBox3.Controls.Add(this.label21);
-			this.groupBox3.Controls.Add(this.textBox13);
 			this.groupBox3.Controls.Add(this.label19);
-			this.groupBox3.Controls.Add(this.textBox11);
 			this.groupBox3.Controls.Add(this.label20);
-			this.groupBox3.Controls.Add(this.textBox12);
 			this.groupBox3.Controls.Add(this.label17);
-			this.groupBox3.Controls.Add(this.textBox7);
 			this.groupBox3.Controls.Add(this.label18);
-			this.groupBox3.Controls.Add(this.textBox10);
 			this.groupBox3.Controls.Add(this.label16);
-			this.groupBox3.Controls.Add(this.textBox9);
 			this.groupBox3.Controls.Add(this.label15);
-			this.groupBox3.Controls.Add(this.textBox8);
 			this.groupBox3.Controls.Add(this.label14);
 			this.groupBox3.Controls.Add(this.label13);
 			this.groupBox3.Controls.Add(this.label12);
@@ -387,39 +395,134 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "時間設定";
 			// 
+			// b_s
+			// 
+			this.b_s.Location = new System.Drawing.Point(261, 36);
+			this.b_s.Maximum = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
+			this.b_s.Name = "b_s";
+			this.b_s.Size = new System.Drawing.Size(36, 19);
+			this.b_s.TabIndex = 30;
+			this.b_s.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.b_s.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+			// 
+			// f_s
+			// 
+			this.f_s.Location = new System.Drawing.Point(261, 58);
+			this.f_s.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+			this.f_s.Name = "f_s";
+			this.f_s.Size = new System.Drawing.Size(36, 19);
+			this.f_s.TabIndex = 28;
+			this.f_s.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			// 
+			// f_m
+			// 
+			this.f_m.Location = new System.Drawing.Point(207, 58);
+			this.f_m.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+			this.f_m.Name = "f_m";
+			this.f_m.Size = new System.Drawing.Size(36, 19);
+			this.f_m.TabIndex = 27;
+			this.f_m.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.f_m.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+			// 
+			// h_s
+			// 
+			this.h_s.Location = new System.Drawing.Point(261, 80);
+			this.h_s.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+			this.h_s.Name = "h_s";
+			this.h_s.Size = new System.Drawing.Size(36, 19);
+			this.h_s.TabIndex = 26;
+			this.h_s.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			// 
+			// h_m
+			// 
+			this.h_m.Location = new System.Drawing.Point(207, 80);
+			this.h_m.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+			this.h_m.Name = "h_m";
+			this.h_m.Size = new System.Drawing.Size(36, 19);
+			this.h_m.TabIndex = 25;
+			this.h_m.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.h_m.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			// 
+			// s_s
+			// 
+			this.s_s.Location = new System.Drawing.Point(261, 102);
+			this.s_s.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+			this.s_s.Name = "s_s";
+			this.s_s.Size = new System.Drawing.Size(36, 19);
+			this.s_s.TabIndex = 24;
+			this.s_s.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			// 
+			// s_m
+			// 
+			this.s_m.Location = new System.Drawing.Point(207, 102);
+			this.s_m.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+			this.s_m.Name = "s_m";
+			this.s_m.Size = new System.Drawing.Size(36, 19);
+			this.s_m.TabIndex = 12;
+			this.s_m.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.s_m.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+			// 
 			// label21
 			// 
 			this.label21.AutoSize = true;
-			this.label21.Location = new System.Drawing.Point(293, 38);
+			this.label21.Location = new System.Drawing.Point(298, 38);
 			this.label21.Name = "label21";
 			this.label21.Size = new System.Drawing.Size(17, 12);
 			this.label21.TabIndex = 23;
 			this.label21.Text = "秒";
 			// 
-			// textBox13
-			// 
-			this.textBox13.Location = new System.Drawing.Point(263, 35);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(30, 19);
-			this.textBox13.TabIndex = 22;
-			this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			// 
 			// label19
 			// 
 			this.label19.AutoSize = true;
-			this.label19.Location = new System.Drawing.Point(293, 104);
+			this.label19.Location = new System.Drawing.Point(298, 104);
 			this.label19.Name = "label19";
 			this.label19.Size = new System.Drawing.Size(17, 12);
 			this.label19.TabIndex = 21;
 			this.label19.Text = "秒";
-			// 
-			// textBox11
-			// 
-			this.textBox11.Location = new System.Drawing.Point(263, 101);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(30, 19);
-			this.textBox11.TabIndex = 20;
-			this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// label20
 			// 
@@ -430,30 +533,14 @@
 			this.label20.TabIndex = 19;
 			this.label20.Text = "分";
 			// 
-			// textBox12
-			// 
-			this.textBox12.Location = new System.Drawing.Point(213, 101);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(30, 19);
-			this.textBox12.TabIndex = 18;
-			this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			// 
 			// label17
 			// 
 			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(293, 82);
+			this.label17.Location = new System.Drawing.Point(298, 82);
 			this.label17.Name = "label17";
 			this.label17.Size = new System.Drawing.Size(17, 12);
 			this.label17.TabIndex = 17;
 			this.label17.Text = "秒";
-			// 
-			// textBox7
-			// 
-			this.textBox7.Location = new System.Drawing.Point(263, 79);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(30, 19);
-			this.textBox7.TabIndex = 16;
-			this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// label18
 			// 
@@ -464,30 +551,14 @@
 			this.label18.TabIndex = 15;
 			this.label18.Text = "分";
 			// 
-			// textBox10
-			// 
-			this.textBox10.Location = new System.Drawing.Point(213, 79);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(30, 19);
-			this.textBox10.TabIndex = 14;
-			this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			// 
 			// label16
 			// 
 			this.label16.AutoSize = true;
-			this.label16.Location = new System.Drawing.Point(293, 60);
+			this.label16.Location = new System.Drawing.Point(298, 60);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(17, 12);
 			this.label16.TabIndex = 13;
 			this.label16.Text = "秒";
-			// 
-			// textBox9
-			// 
-			this.textBox9.Location = new System.Drawing.Point(263, 57);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(30, 19);
-			this.textBox9.TabIndex = 12;
-			this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// label15
 			// 
@@ -497,14 +568,6 @@
 			this.label15.Size = new System.Drawing.Size(17, 12);
 			this.label15.TabIndex = 11;
 			this.label15.Text = "分";
-			// 
-			// textBox8
-			// 
-			this.textBox8.Location = new System.Drawing.Point(213, 57);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(30, 19);
-			this.textBox8.TabIndex = 10;
-			this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// label14
 			// 
@@ -563,13 +626,13 @@
 			this.radioButton5.Name = "radioButton5";
 			this.radioButton5.Size = new System.Drawing.Size(71, 16);
 			this.radioButton5.TabIndex = 4;
-			this.radioButton5.TabStop = true;
 			this.radioButton5.Text = "試合終了";
 			this.radioButton5.UseVisualStyleBackColor = true;
 			// 
 			// radioButton1
 			// 
 			this.radioButton1.AutoSize = true;
+			this.radioButton1.Checked = true;
 			this.radioButton1.Location = new System.Drawing.Point(6, 18);
 			this.radioButton1.Name = "radioButton1";
 			this.radioButton1.Size = new System.Drawing.Size(59, 16);
@@ -585,7 +648,6 @@
 			this.radioButton4.Name = "radioButton4";
 			this.radioButton4.Size = new System.Drawing.Size(47, 16);
 			this.radioButton4.TabIndex = 3;
-			this.radioButton4.TabStop = true;
 			this.radioButton4.Text = "後半";
 			this.radioButton4.UseVisualStyleBackColor = true;
 			// 
@@ -596,7 +658,6 @@
 			this.radioButton2.Name = "radioButton2";
 			this.radioButton2.Size = new System.Drawing.Size(47, 16);
 			this.radioButton2.TabIndex = 1;
-			this.radioButton2.TabStop = true;
 			this.radioButton2.Text = "前半";
 			this.radioButton2.UseVisualStyleBackColor = true;
 			// 
@@ -607,12 +668,12 @@
 			this.radioButton3.Name = "radioButton3";
 			this.radioButton3.Size = new System.Drawing.Size(78, 16);
 			this.radioButton3.TabIndex = 2;
-			this.radioButton3.TabStop = true;
 			this.radioButton3.Text = "ハーフタイム";
 			this.radioButton3.UseVisualStyleBackColor = true;
 			// 
 			// groupBox5
 			// 
+			this.groupBox5.Controls.Add(this.button5);
 			this.groupBox5.Controls.Add(this.button3);
 			this.groupBox5.Controls.Add(this.label23);
 			this.groupBox5.Controls.Add(this.textBox15);
@@ -628,14 +689,25 @@
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "タイマー";
 			// 
+			// button5
+			// 
+			this.button5.Location = new System.Drawing.Point(86, 65);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(70, 62);
+			this.button5.TabIndex = 28;
+			this.button5.Text = "button5";
+			this.button5.UseVisualStyleBackColor = true;
+			this.button5.Click += new System.EventHandler(this.button5_Click);
+			// 
 			// button3
 			// 
 			this.button3.Location = new System.Drawing.Point(6, 65);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(153, 62);
+			this.button3.Size = new System.Drawing.Size(70, 62);
 			this.button3.TabIndex = 27;
 			this.button3.Text = "button3";
 			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// label23
 			// 
@@ -733,6 +805,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.b_s)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.f_s)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.f_m)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.h_s)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.h_m)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.s_s)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.s_m)).EndInit();
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox4.PerformLayout();
 			this.groupBox5.ResumeLayout(false);
@@ -759,32 +838,19 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.RadioButton radioButton4;
-		private System.Windows.Forms.RadioButton radioButton3;
-		private System.Windows.Forms.RadioButton radioButton2;
-		private System.Windows.Forms.RadioButton radioButton1;
 		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.RadioButton radioButton5;
 		private System.Windows.Forms.Label label21;
-		private System.Windows.Forms.TextBox textBox13;
 		private System.Windows.Forms.Label label19;
-		private System.Windows.Forms.TextBox textBox11;
 		private System.Windows.Forms.Label label20;
-		private System.Windows.Forms.TextBox textBox12;
 		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.TextBox textBox7;
 		private System.Windows.Forms.Label label18;
-		private System.Windows.Forms.TextBox textBox10;
 		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.TextBox textBox9;
 		private System.Windows.Forms.Label label15;
-		private System.Windows.Forms.TextBox textBox8;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.GroupBox groupBox5;
-		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Label label23;
 		private System.Windows.Forms.TextBox textBox15;
 		private System.Windows.Forms.Label label24;
@@ -803,6 +869,20 @@
 		public System.Windows.Forms.TextBox textBox4;
 		public System.Windows.Forms.NumericUpDown numericUpDown3;
 		public System.Windows.Forms.NumericUpDown numericUpDown4;
+		public System.Windows.Forms.NumericUpDown s_s;
+		public System.Windows.Forms.NumericUpDown s_m;
+		public System.Windows.Forms.NumericUpDown b_s;
+		public System.Windows.Forms.NumericUpDown f_s;
+		public System.Windows.Forms.NumericUpDown f_m;
+		public System.Windows.Forms.NumericUpDown h_s;
+		public System.Windows.Forms.NumericUpDown h_m;
+		public System.Windows.Forms.Button button3;
+		public System.Windows.Forms.Button button5;
+		public System.Windows.Forms.RadioButton radioButton4;
+		public System.Windows.Forms.RadioButton radioButton3;
+		public System.Windows.Forms.RadioButton radioButton2;
+		public System.Windows.Forms.RadioButton radioButton1;
+		public System.Windows.Forms.RadioButton radioButton5;
 	}
 }
 

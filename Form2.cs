@@ -173,6 +173,5 @@ namespace RCJ_Scoreboard {
 			ControllerPosition.Y = (int)(size.YRation * (float)ClientSize.Height);
 			label.Location = ControllerPosition;
 		}
-
 	}
 }
