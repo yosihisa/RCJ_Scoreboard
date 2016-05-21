@@ -168,7 +168,7 @@ namespace RCJ_Scoreboard {
 
 
 				if (s_s.Value == 0) {
-					if (h_m.Value != 0) {
+					if (s_m.Value != 0) {
 						s_m.BeginInvoke((MethodInvoker)delegate () { s_m.Value--; });
 						s_s.BeginInvoke((MethodInvoker)delegate () { s_s.Value = 59; });
 					}
