@@ -313,10 +313,10 @@
 			// 
 			this.label20.AutoSize = true;
 			this.label20.BackColor = System.Drawing.SystemColors.Window;
-			this.label20.Font = new System.Drawing.Font("MS UI Gothic", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.label20.Font = new System.Drawing.Font("MS UI Gothic", 50F);
 			this.label20.Location = new System.Drawing.Point(11, 181);
 			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(247, 74);
+			this.label20.Size = new System.Drawing.Size(226, 67);
 			this.label20.TabIndex = 11;
 			this.label20.Text = "チーム2";
 			// 
